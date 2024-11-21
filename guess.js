@@ -25,7 +25,7 @@ document.querySelector(".check").addEventListener("click", () => {
     } else if (guess !== hiddenNumber ) {
         if (score > 1 ) {
             displayMessage(guess > hiddenNumber ? "Your guess is too high" : "Your guess is too low")
-            score--
+            score-2
             document.querySelector(".score").textContent = score
 
         } else {
